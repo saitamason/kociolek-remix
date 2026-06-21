@@ -15,11 +15,12 @@ export default function DaniaDnia() {
   console.log("Dania dnia na ten tydzień (do soboty włącznie)", menuNum);
 
   const today = new Date();
-  const startDate = new Date("2026-03-29");
-  const endDate = new Date("2026-04-09");
+  const startDate = new Date("2026-06-21");
+  const endDate = new Date("2026-08-31");
+  let special = "";
   if (today >= startDate && today <= endDate) {
-    console.log("Specjalne menu na Wielkanoc");
-    menuNum = 4;
+    console.log("Przerwa wakacyjna");
+    special = "dania-dnia-1-2026-bez-soboty.jpg";
   }
 
   return (
@@ -30,14 +31,18 @@ export default function DaniaDnia() {
         </h1>
       </header>
       <section className="menu-section container container--default">
-        {/* <p className="margin-top">
-          <strong>Uwaga!</strong> Kociołek będzie nieczynny w dniach
-          01.04-09.04.2026 z powodu przerwy świątecznej. Możliwy będzie jedynie
-          odbiór zamówień świątecznych.
-        </p> */}
+        <p className="margin-top">
+          <strong>Uwaga!</strong> Przerwa wakacyjna od 27 czerwca. Zapraszamy od
+          września. W sprawie imprez okolicznościowych prosimy o kontakt pod
+          numerem kom. 721 473 077.
+        </p>
         <img
           className="menu-img"
-          src={`/img/menu/dania-dnia-${menuNum}-2026-01.jpg`}
+          src={
+            special
+              ? `/img/menu/${special}`
+              : `/img/menu/dania-dnia-${menuNum}-2026-01.jpg`
+          }
           alt="Menu"
         />
         <p className="menu-info">

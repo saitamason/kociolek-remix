@@ -35,9 +35,9 @@ export default function Layout() {
   return (
     <>
       <TemporarilyClosedBanner
-        dateStart={new Date("2026-03-29")}
-        dateEnd={new Date("2026-04-09")}
-        message="W dniach 01.04-09.04.2026 Kociołek będzie zamknięty. Możliwy będzie jedynie odbiór zamówień świątecznych."
+        dateStart={new Date("2026-06-27")}
+        dateEnd={new Date("2026-08-31")}
+        message="W dniach 27.06-31.08.2026 Kociołek będzie zamknięty z powodu przerwy wakacyjnej. W sprawie imprez okolicznościowych prosimy o kontakt pod numerem kom. 721 473 077."
       />
       {/* 
       <p className="info">
