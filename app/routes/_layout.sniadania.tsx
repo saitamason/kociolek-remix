@@ -19,7 +19,7 @@ export default function Sniadania() {
       <section className="menu-section container container--default">
         <img
           className="menu-img"
-          src="/img/menu/sniadania-2025-09.jpg"
+          src="/img/menu/sniadania-2026-09.jpg"
           alt="Menu"
         />
         <p className="menu-info">
